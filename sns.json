@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/sns.json",
+    "properties": {
+        "Records": {
+            "id": "/properties/Records",
+            "items": {
+                "id": "/properties/Records/items",
+                "properties": {
+                    "EventSource": {
+                        "id": "/properties/Records/items/properties/EventSource",
+                        "type": "string"
+                    },
+                    "EventSubscriptionArn": {
+                        "id": "/properties/Records/items/properties/EventSubscriptionArn",
+                        "type": "string"
+                    },
+                    "EventVersion": {
+                        "id": "/properties/Records/items/properties/EventVersion",
+                        "type": "string"
+                    },
+                    "Sns": {
+                        "id": "/properties/Records/items/properties/Sns",
+                        "properties": {
+                            "Message": {
+                                "id": "/properties/Records/items/properties/Sns/properties/Message",
+                                "type": "string"
+                            },
+                            "MessageAttributes": {
+                                "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes",
+                                "properties": {
+                                    "Test": {
+                                        "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/Test",
+                                        "properties": {
+                                            "Type": {
+                                                "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/Test/properties/Type",
+                                                "type": "string"
+                                            },
+                                            "Value": {
+                                                "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/Test/properties/Value",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "TestBinary": {
+                                        "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/TestBinary",
+                                        "properties": {
+                                            "Type": {
+                                                "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/TestBinary/properties/Type",
+                                                "type": "string"
+                                            },
+                                            "Value": {
+                                                "id": "/properties/Records/items/properties/Sns/properties/MessageAttributes/properties/TestBinary/properties/Value",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "MessageId": {
+                                "id": "/properties/Records/items/properties/Sns/properties/MessageId",
+                                "type": "string"
+                            },
+                            "Signature": {
+                                "id": "/properties/Records/items/properties/Sns/properties/Signature",
+                                "type": "string"
+                            },
+                            "SignatureVersion": {
+                                "id": "/properties/Records/items/properties/Sns/properties/SignatureVersion",
+                                "type": "string"
+                            },
+                            "SigningCertUrl": {
+                                "id": "/properties/Records/items/properties/Sns/properties/SigningCertUrl",
+                                "type": "string"
+                            },
+                            "Subject": {
+                                "id": "/properties/Records/items/properties/Sns/properties/Subject",
+                                "type": "string"
+                            },
+                            "Timestamp": {
+                                "id": "/properties/Records/items/properties/Sns/properties/Timestamp",
+                                "type": "string"
+                            },
+                            "TopicArn": {
+                                "id": "/properties/Records/items/properties/Sns/properties/TopicArn",
+                                "type": "string"
+                            },
+                            "Type": {
+                                "id": "/properties/Records/items/properties/Sns/properties/Type",
+                                "type": "string"
+                            },
+                            "UnsubscribeUrl": {
+                                "id": "/properties/Records/items/properties/Sns/properties/UnsubscribeUrl",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}

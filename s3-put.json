@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/s3-put.json",
+    "properties": {
+        "Records": {
+            "id": "/properties/Records",
+            "items": {
+                "id": "/properties/Records/items",
+                "properties": {
+                    "awsRegion": {
+                        "id": "/properties/Records/items/properties/awsRegion",
+                        "type": "string"
+                    },
+                    "eventName": {
+                        "id": "/properties/Records/items/properties/eventName",
+                        "type": "string"
+                    },
+                    "eventSource": {
+                        "id": "/properties/Records/items/properties/eventSource",
+                        "type": "string"
+                    },
+                    "eventTime": {
+                        "id": "/properties/Records/items/properties/eventTime",
+                        "type": "string"
+                    },
+                    "eventVersion": {
+                        "id": "/properties/Records/items/properties/eventVersion",
+                        "type": "string"
+                    },
+                    "requestParameters": {
+                        "id": "/properties/Records/items/properties/requestParameters",
+                        "properties": {
+                            "sourceIPAddress": {
+                                "id": "/properties/Records/items/properties/requestParameters/properties/sourceIPAddress",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "responseElements": {
+                        "id": "/properties/Records/items/properties/responseElements",
+                        "properties": {
+                            "x-amz-id-2": {
+                                "id": "/properties/Records/items/properties/responseElements/properties/x-amz-id-2",
+                                "type": "string"
+                            },
+                            "x-amz-request-id": {
+                                "id": "/properties/Records/items/properties/responseElements/properties/x-amz-request-id",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "s3": {
+                        "id": "/properties/Records/items/properties/s3",
+                        "properties": {
+                            "bucket": {
+                                "id": "/properties/Records/items/properties/s3/properties/bucket",
+                                "properties": {
+                                    "arn": {
+                                        "id": "/properties/Records/items/properties/s3/properties/bucket/properties/arn",
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "id": "/properties/Records/items/properties/s3/properties/bucket/properties/name",
+                                        "type": "string"
+                                    },
+                                    "ownerIdentity": {
+                                        "id": "/properties/Records/items/properties/s3/properties/bucket/properties/ownerIdentity",
+                                        "properties": {
+                                            "principalId": {
+                                                "id": "/properties/Records/items/properties/s3/properties/bucket/properties/ownerIdentity/properties/principalId",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "configurationId": {
+                                "id": "/properties/Records/items/properties/s3/properties/configurationId",
+                                "type": "string"
+                            },
+                            "object": {
+                                "id": "/properties/Records/items/properties/s3/properties/object",
+                                "properties": {
+                                    "eTag": {
+                                        "id": "/properties/Records/items/properties/s3/properties/object/properties/eTag",
+                                        "type": "string"
+                                    },
+                                    "key": {
+                                        "id": "/properties/Records/items/properties/s3/properties/object/properties/key",
+                                        "type": "string"
+                                    },
+                                    "sequencer": {
+                                        "id": "/properties/Records/items/properties/s3/properties/object/properties/sequencer",
+                                        "type": "string"
+                                    },
+                                    "size": {
+                                        "id": "/properties/Records/items/properties/s3/properties/object/properties/size",
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "s3SchemaVersion": {
+                                "id": "/properties/Records/items/properties/s3/properties/s3SchemaVersion",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "userIdentity": {
+                        "id": "/properties/Records/items/properties/userIdentity",
+                        "properties": {
+                            "principalId": {
+                                "id": "/properties/Records/items/properties/userIdentity/properties/principalId",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}

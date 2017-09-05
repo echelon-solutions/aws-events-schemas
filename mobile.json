@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/mobile.json",
+    "properties": {
+        "message": {
+            "id": "/properties/message",
+            "type": "string"
+        },
+        "operation": {
+            "id": "/properties/operation",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

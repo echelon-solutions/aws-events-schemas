@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/cognito.json",
+    "properties": {
+        "datasetName": {
+            "id": "/properties/datasetName",
+            "type": "string"
+        },
+        "datasetRecords": {
+            "id": "/properties/datasetRecords",
+            "properties": {
+                "SampleKey1": {
+                    "id": "/properties/datasetRecords/properties/SampleKey1",
+                    "properties": {
+                        "newValue": {
+                            "id": "/properties/datasetRecords/properties/SampleKey1/properties/newValue",
+                            "type": "string"
+                        },
+                        "oldValue": {
+                            "id": "/properties/datasetRecords/properties/SampleKey1/properties/oldValue",
+                            "type": "string"
+                        },
+                        "op": {
+                            "id": "/properties/datasetRecords/properties/SampleKey1/properties/op",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "SampleKey2": {
+                    "id": "/properties/datasetRecords/properties/SampleKey2",
+                    "properties": {
+                        "newValue": {
+                            "id": "/properties/datasetRecords/properties/SampleKey2/properties/newValue",
+                            "type": "string"
+                        },
+                        "oldValue": {
+                            "id": "/properties/datasetRecords/properties/SampleKey2/properties/oldValue",
+                            "type": "string"
+                        },
+                        "op": {
+                            "id": "/properties/datasetRecords/properties/SampleKey2/properties/op",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "eventType": {
+            "id": "/properties/eventType",
+            "type": "string"
+        },
+        "identityId": {
+            "id": "/properties/identityId",
+            "type": "string"
+        },
+        "identityPoolId": {
+            "id": "/properties/identityPoolId",
+            "type": "string"
+        },
+        "region": {
+            "id": "/properties/region",
+            "type": "string"
+        },
+        "version": {
+            "id": "/properties/version",
+            "type": "integer"
+        }
+    },
+    "type": "object"
+}

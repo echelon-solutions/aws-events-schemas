@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/logs.json",
+    "properties": {
+        "awslogs": {
+            "id": "/properties/awslogs",
+            "properties": {
+                "data": {
+                    "id": "/properties/awslogs/properties/data",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}

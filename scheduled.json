@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/scheduled.json",
+    "properties": {
+        "account": {
+            "id": "/properties/account",
+            "type": "string"
+        },
+        "detail": {
+            "id": "/properties/detail",
+            "properties": {
+                "null": {
+                    "id": "/properties/detail/properties",
+                    "type": "null"
+                }
+            },
+            "type": "object"
+        },
+        "detail-type": {
+            "id": "/properties/detail-type",
+            "type": "string"
+        },
+        "id": {
+            "id": "/properties/id",
+            "type": "string"
+        },
+        "region": {
+            "id": "/properties/region",
+            "type": "string"
+        },
+        "resources": {
+            "id": "/properties/resources",
+            "items": {
+                "id": "/properties/resources/items",
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "source": {
+            "id": "/properties/source",
+            "type": "string"
+        },
+        "time": {
+            "id": "/properties/time",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
