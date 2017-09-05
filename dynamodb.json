@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/dynamodb.json",
+    "properties": {
+        "Records": {
+            "id": "/properties/Records",
+            "items": {
+                "id": "/properties/Records/items",
+                "properties": {
+                    "awsRegion": {
+                        "id": "/properties/Records/items/properties/awsRegion",
+                        "type": "string"
+                    },
+                    "dynamodb": {
+                        "id": "/properties/Records/items/properties/dynamodb",
+                        "properties": {
+                            "Keys": {
+                                "id": "/properties/Records/items/properties/dynamodb/properties/Keys",
+                                "properties": {
+                                    "Id": {
+                                        "id": "/properties/Records/items/properties/dynamodb/properties/Keys/properties/Id",
+                                        "properties": {
+                                            "N": {
+                                                "id": "/properties/Records/items/properties/dynamodb/properties/Keys/properties/Id/properties/N",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "NewImage": {
+                                "id": "/properties/Records/items/properties/dynamodb/properties/NewImage",
+                                "properties": {
+                                    "Id": {
+                                        "id": "/properties/Records/items/properties/dynamodb/properties/NewImage/properties/Id",
+                                        "properties": {
+                                            "N": {
+                                                "id": "/properties/Records/items/properties/dynamodb/properties/NewImage/properties/Id/properties/N",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "Message": {
+                                        "id": "/properties/Records/items/properties/dynamodb/properties/NewImage/properties/Message",
+                                        "properties": {
+                                            "S": {
+                                                "id": "/properties/Records/items/properties/dynamodb/properties/NewImage/properties/Message/properties/S",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "SequenceNumber": {
+                                "id": "/properties/Records/items/properties/dynamodb/properties/SequenceNumber",
+                                "type": "string"
+                            },
+                            "SizeBytes": {
+                                "id": "/properties/Records/items/properties/dynamodb/properties/SizeBytes",
+                                "type": "integer"
+                            },
+                            "StreamViewType": {
+                                "id": "/properties/Records/items/properties/dynamodb/properties/StreamViewType",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "eventID": {
+                        "id": "/properties/Records/items/properties/eventID",
+                        "type": "string"
+                    },
+                    "eventName": {
+                        "id": "/properties/Records/items/properties/eventName",
+                        "type": "string"
+                    },
+                    "eventSource": {
+                        "id": "/properties/Records/items/properties/eventSource",
+                        "type": "string"
+                    },
+                    "eventSourceARN": {
+                        "id": "/properties/Records/items/properties/eventSourceARN",
+                        "type": "string"
+                    },
+                    "eventVersion": {
+                        "id": "/properties/Records/items/properties/eventVersion",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}

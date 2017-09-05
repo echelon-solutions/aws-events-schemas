@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://schemas.echelon.solutions/aws/events/cloudformation.json",
+    "properties": {
+        "LogicalResourceId": {
+            "id": "/properties/LogicalResourceId",
+            "type": "string"
+        },
+        "RequestId": {
+            "id": "/properties/RequestId",
+            "type": "string"
+        },
+        "RequestType": {
+            "id": "/properties/RequestType",
+            "type": "string"
+        },
+        "ResourceProperties": {
+            "id": "/properties/ResourceProperties",
+            "properties": {
+                "List": {
+                    "id": "/properties/ResourceProperties/properties/List",
+                    "items": {
+                        "id": "/properties/ResourceProperties/properties/List/items",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "StackName": {
+                    "id": "/properties/ResourceProperties/properties/StackName",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "ResourceType": {
+            "id": "/properties/ResourceType",
+            "type": "string"
+        },
+        "ResponseURL": {
+            "id": "/properties/ResponseURL",
+            "type": "string"
+        },
+        "StackId": {
+            "id": "/properties/StackId",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
